@@ -11,6 +11,7 @@ from dotenv import load_dotenv
 #This bot sells call spreads at the max of the call wall, highest absolute GEX strike,
 #and highest net GEX strike(all taken using static OI GEX calculation). It checks to make sure that the spot price is below the max of the three
 #strikes, then makes sure there is at 2:1 Risk:Reward or less for the call spread at the max of the three strikes.
+#It takes profits when the price of the call spread gets down to .03.
 
 async def main():
     load_dotenv()

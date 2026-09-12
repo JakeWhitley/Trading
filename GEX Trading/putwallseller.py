@@ -10,7 +10,7 @@ from dotenv import load_dotenv
 
 #This bot sells put spreads at the put wall when 0DTE net GEX(static open interest calculation) is positive, 
 #spot price is over the put wall, and the Risk:Reward for the put spread at the put wall is 2:1 or less.
-#It takes profits when the price of the put spread gets down to .05.
+#It takes profits when the price of the put spread gets down to .03.
 
 async def main():
     load_dotenv()
